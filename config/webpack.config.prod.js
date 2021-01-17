@@ -269,7 +269,7 @@ module.exports = {
         removeStyleLinkTypeAttributes: true,
         keepClosingSlash: true,
         minifyJS: true,
-        minifyCSS: false,
+        minifyCSS: true,
         minifyURLs: true,
       },
     }),
