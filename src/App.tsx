@@ -1,20 +1,10 @@
 import React, { Component } from "react";
-import {run} from "./AnimatedBackground/AnimatedBackground";
-import "./App.css";
+import Carousel from "./Carousel/Carousel";
 
 class App extends Component {
-
-  public componentDidMount() {
-    run();
-  }
-
-
   public render() {
-    return (
-      <div className="helicopter-layout"></div>
-    );
+    return <Carousel />;
   }
 }
-
 
 export default App;
