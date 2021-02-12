@@ -27,6 +27,11 @@ export default class Carousel extends Component<{}, { nav1: any; nav2: any }> {
   }
 
   public render() {
+    const settings = {
+      fade: true,
+      speed: 500,
+      slidesToShow: 1,
+    };
     return (
       <div>
         <h2>Slider Syncing (AsNavFor)</h2>
@@ -34,6 +39,7 @@ export default class Carousel extends Component<{}, { nav1: any; nav2: any }> {
         <Slider
           asNavFor={this.state.nav2}
           ref={(slider) => (this.slider1 = slider)}
+          {...settings}
         >
           <CityAnimationProject />
           <div>

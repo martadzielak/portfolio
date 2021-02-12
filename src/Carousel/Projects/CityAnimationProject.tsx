@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import { runCityAnimation } from "./CityAnimation";
+import React, { useEffect, useState } from "react";
+import { runCityAnimation, stopCityAnimation } from "./CityAnimation";
 import { Project, ProjectWrapper } from "./styled";
 
 export const CityAnimationProject = () => {
   useEffect(() => {
-    runCityAnimation();
+    runCityAnimation("city");
   }, []);
 
   return (

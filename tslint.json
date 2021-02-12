@@ -21,6 +21,7 @@
         "new-parens": true,
         "no-arg": true,
         "no-bitwise": true,
+        "prefer-const": false,
         "no-conditional-assignment": true,
         "no-consecutive-blank-lines": false,
         "variable-name": [
